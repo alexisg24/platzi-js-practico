@@ -1,38 +1,30 @@
 //Cuadrado
 console.group("Cuadrados");
-const ladoCuadrado = 5;
-const areaCuadrado = ladoCuadrado * 4;
+const perimetroCuadrado = (lado) => lado * 4;
+const areaCuadrado = (lado) => lado * lado;
 
-console.log(`Los lados del cuadrado miden ${ladoCuadrado}cm`);
-console.log(`El perimetro del cuadrado es ${areaCuadrado}cm^2`);
+console.log(`El perimetro del cuadrado es ${perimetroCuadrado(4)}cm^2`);
+console.log(`El area del cuadrado es ${areaCuadrado(5)}cm^2`);
 console.groupEnd();
 
 //Triangulo
 console.group("Triangulos");
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 4;
-const alturaTriangulo = 5.5;
-const perimetroTriangulo = ladoTriangulo1+ladoTriangulo2+baseTriangulo;
-const areaTriangulo = (baseTriangulo*alturaTriangulo)/2;
+const perimetroTriangulo = (lado1, lado2, base) => lado1+lado2+base;
+const areaTriangulo = (base, altura) => (base*altura)/2;
 
-console.log(`Los lados del triangulo miden ${ladoTriangulo1}cm, ${ladoTriangulo2}cm y su base ${baseTriangulo}cm`);
-console.log(`La altura del triangulo es de ${alturaTriangulo}cm`);
-console.log(`El perimetro del triangulo es de ${perimetroTriangulo}cm`);
-console.log(`El area del triangulo es de ${areaTriangulo}cm^2`);
+console.log(`El perimetro del triangulo es de ${perimetroTriangulo(7,5,6)}cm`);
+console.log(`El area del triangulo es de ${areaTriangulo(6,8)}cm^2`);
 console.groupEnd();
 
 //Circulo
 console.group("Circulos");
-const radio = 4;
-const diametro = radio*2;
+const diametro = (radio) => radio*2;
 const pi = Math.PI;
-const perimetroCirculo = diametro*pi;
-const areaCirculo = (radio*radio)*pi;
+const perimetroCirculo = (radio) => diametro(radio)*pi;
+const areaCirculo = (radio) => (radio*radio)*pi;
 
-console.log(`El radio del circulo es de ${radio}cm`);
-console.log(`El diametro del circulo es de ${diametro}cm`);
+console.log(`El diametro del circulo es de ${diametro(4)}cm`);
 console.log(`Pi es: ${pi}`);
-console.log(`El perimetro del circulo es de ${perimetroCirculo}cm`);
-console.log(`El area del circulo es de ${areaCirculo}cm^2`);
+console.log(`El perimetro del circulo es de ${perimetroCirculo(8)}cm`);
+console.log(`El area del circulo es de ${areaCirculo(4)}cm^2`);
 console.groupEnd();
