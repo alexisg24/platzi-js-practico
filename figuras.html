@@ -7,8 +7,75 @@
     <title>Figuras Geometricas | Curso practico</title>
 </head>
 <body>
-    <main>
+    <header>
         <h1>Figuras Geometricas</h1>
+        <p>Practica de calculos geometricos con Javascript</p>
+    </header>
+    <main>
+        <section class="calculoCuadrado">
+            <h2>Calculo de Cuadrado</h2>
+            <form action="">
+                <label for="cuadrado">
+                    <p>Ingrese el tamaño de un lado del cuadrado</p>
+                </label>
+                <input type="number" name="cuadrado" id="cuadrado" value="0">
+                <button type="button" onclick="calculoPerimetroC()">Calcular el Perimetro del Cuadrado</button>
+                <button type="button" onclick="calculoAreaC()">Calcular el Area del Cuadrado</button>
+                <br>
+                <label for="cuadradoResult">El resultado es:</label>
+                <input type="number" name="cuadradoResult" id="cuadradoResult" disabled>
+            </form>
+        </section>
+
+        <section class="calculoTriangulo">
+            <h2>Calculo de Triangulo</h2>
+            <form action="">
+            <label for="lado1">
+                <p>Ingrese el tamaño el lado 1 del triangulo</p>
+            </label>
+            <input type="number" name="lado1" id="lado1" value="0">
+
+            <label for="lado2">
+                <p>Ingrese el tamaño el lado 2 del triangulo</p>
+            </label>
+            <input type="number" name="lado2" id="lado2" value="0">
+
+            <label for="base">
+                <p>Ingrese el tamaño la base del triangulo</p>
+            </label>
+            <input type="number" name="base" id="base" value="0">
+
+            <label for="altura">
+                <p>Ingrese la altura del triangulo</p>
+            </label>
+            <input type="number" name="altura" id="altura" value="0">
+
+
+            <button type="button" onclick="calculoPerimetroT()">Calcular el Perimetro del Triangulo</button>
+            <button type="button" onclick="calculoAreaT()">Calcular el Area del Triangulo</button>
+            <button type="button" onclick="calculoAlturaTI()">Calcular el Altura del Triangulo Isosceles</button>
+            <br>
+            <label for="cuadradoResult">El resultado es:</label>
+            <input type="number" name="trianguloResult" id="trianguloResult" disabled>
+            </form>
+        </section>
+
+        <section class="calculoTriangulo">
+            <h2>Calculo de Circulo</h2>
+            <form action="">
+            <label for="radio">
+                <p>Ingrese el radio del circulo</p>
+            </label>
+            <input type="number" name="radio" id="radio" value="0">
+
+            <button type="button" onclick="calculoDiametroC()">Calcular el Diametro Circulo</button>
+            <button type="button" onclick="calculoPerimetroCi()">Calcular el Perimetro del Circulo</button>
+            <button type="button" onclick="calculoAreaCi()">Calcular el Area del Circulo</button>
+            <br>
+            <label for="cuadradoResult">El resultado es:</label>
+            <input type="number" name="circuloResult" id="circuloResult" disabled>
+            </form>
+        </section>
     </main>
     <script src="./figuras.js"></script>
 </body>
