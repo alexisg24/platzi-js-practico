@@ -7,9 +7,37 @@
     <title>Calculo de descuentos | Curso javascript platzi</title>
 </head>
 <body>
-    <h1>
-        Porcentajes y descuentos
-    </h1>
+    <header>
+        <h1>
+            Porcentajes y descuentos
+        </h1>
+        <p>Este es el segundo taller del curso practico de javascript</p>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Calcula el precio a pagar de tus productos con descuento
+            </h2>
+
+            <form action="">
+                <label for="price">Escribe el precio de tu producto:</label>
+                <input type="number" id="price">
+
+                <label for="discount">Escribe el descuento de tu producto</label>
+                <input type="number" id="discount">
+
+                <label for="coupon">Escribe un cupon de descuento</label>
+                <input type="text" id="coupon">
+                <input type="text" id="cdisc" value="0%" disabled>
+
+                <button type="button" onclick="printDiscount()">Calcular</button>
+
+                <p id="resultP"></p>
+            </form>
+        </section>
+    </main>
+
 
     <script src="./descuentos.js"></script>
 </body>
