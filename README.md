@@ -13,3 +13,10 @@
 - Segundo paso: implementar las formulas de las formas geometricas con javascript
 - Tercer paso: crear funciones calculadoras en javascript
 - Cuarto paso: integrar javascript a html
+
+## Tercera practica: Promedio, Mediana y Moda
+
+- Primer paso: definir las formulas
+- Segundo paso: implementar las formulas de las formas geometricas con javascript
+- Tercer paso: crear funciones calculadoras en javascript
+- Cuarto paso: integrar javascript a html
